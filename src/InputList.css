@@ -1,0 +1,21 @@
+p{
+    padding-left: 5px;
+    font-size: .8em;
+    display: none;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid red;
+}
+
+
+input:not(:focus):invalid{
+    border: 1px solid whitesmoke;
+
+}
+
+
+input:invalid[focused="true"] ~ p {
+    display: block;
+}
+
